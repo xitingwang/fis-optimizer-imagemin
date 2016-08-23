@@ -1,0 +1,29 @@
+{
+  "name": "fis-optimizer-imagemin",
+  "version": "0.0.1",
+  "description": "Compress JPG,JPEG,PNG,GIF,SVG",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xitingwang/fis-optimizer-imagemin.git"
+  },
+  "keywords": [
+    "fis3", "minify", "pngcrush",
+    "node-pngcrush", "pngquant",
+    "node-pngquant-native",
+    "jpeg", "jpg", "png", "gif", "svg", "image", "compress",
+    "compressor"
+  ],
+  "dependencies": {
+    "imagemin": "*",
+    "imagemin-mozjpeg": "*",
+    "imagemin-pngquant": "*",
+    "imagemin-svgo": "*",
+    "imagemin-gifsicle": "*"
+  },
+  "author": "dw_wangchao1 <wangchao1@yy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xitingwang/fis-optimizer-imagemin/issues"
+  }
+}

@@ -1,2 +1,14 @@
 # fis-optimizer-imagemin
-Compress JPG,JPEG,PNG,GIF,SVG
+
+A optimizer for fis to compress JPG,JPEG,PNG,GIF and SVG by using imagemin.
+
+## settings
+
+```javascript
+//file : path/to/project/fis-conf.js
+fis.match('/img/(*.{jpg,png,gif})', {
+    optimizer: fis.plugin('imagemin', {
+        release: '../output/img'
+    })
+});
+```
