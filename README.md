@@ -1,6 +1,8 @@
 # fis-optimizer-imagemin
 
 A optimizer for fis to compress JPG,JPEG,PNG,GIF and SVG by using imagemin.
+## use
+npm install --save fis-optimizer-imagemin
 
 ## settings
 
