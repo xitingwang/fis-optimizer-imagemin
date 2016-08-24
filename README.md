@@ -2,7 +2,9 @@
 
 A optimizer for fis to compress JPG,JPEG,PNG,GIF and SVG by using imagemin.
 ## use
+```node
 npm install --save fis-optimizer-imagemin
+```
 
 ## settings
 
