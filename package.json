@@ -1,6 +1,6 @@
 {
   "name": "fis-optimizer-imagemin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compress JPG,JPEG,PNG,GIF,SVG With Imagemin",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,8 @@
     "imagemin-mozjpeg": "*",
     "imagemin-pngquant": "*",
     "imagemin-svgo": "*",
-    "imagemin-gifsicle": "*"
+    "imagemin-gifsicle": "*",
+    "deasync": "*"
   },
   "author": "dw_wangchao1 <wangchao1@yy.com>",
   "license": "MIT",

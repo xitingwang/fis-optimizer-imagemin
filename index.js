@@ -4,9 +4,12 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
 const imageminGifsicle = require('imagemin-gifsicle');
 const imageminSvgo = require('imagemin-svgo');
+const deasync = require('deasync');
 
 module.exports = function(content, file, conf) {
-	imagemin([file.subpath.substr(1)], conf.to, {
+	var result, isReturn = false;
+
+    imagemin.buffer(content, {
 		use: [imageminMozjpeg({
 			quality: 98
 		}), imageminPngquant({
@@ -14,8 +17,14 @@ module.exports = function(content, file, conf) {
 		}), imageminGifsicle({
 			optimizationLevel: 3
 		}), imageminSvgo()]
-	}).then(() => {
-		//console.log('Images optimized');
+	}).then(function(data){
+		isReturn = true;
+		result = data;
 	});
-	return null;
+
+	while(!isReturn){
+        deasync.runLoopOnce();
+    }
+
+	return result;
 }
